@@ -45,7 +45,7 @@ const Progress = {
   },
   
   getTotalChapters() {
-    return document.querySelectorAll('[data-chapter]').length || 18;
+    return document.querySelectorAll('[data-chapter]').length || 17;
   },
   
   updateUI() {
