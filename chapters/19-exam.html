@@ -29,211 +29,16 @@
       
       <div class="fun-fact">
         <span class="emoji">📝</span>
-        <div>满分100分，90分以上即可获得毕业证书！共20道题，判断题10道（每题3分），应用题10道（每题7分）。</div>
+        <div>满分100分，90分以上即可获得毕业证书！共20道题，判断题10道（每题3分），应用题10道（每题7分）。每次考试随机抽取一套试卷！</div>
+      </div>
+
+      <div id="exam-info" style="text-align: center; margin: 20px 0; padding: 16px; background: #f1f5f9; border-radius: 8px;">
+        <p>当前试卷：<strong id="paper-id">加载中...</strong></p>
+        <p style="font-size: 0.9rem; color: #64748b;">共 <strong>5</strong> 套试卷，随机抽取</p>
       </div>
       
       <div id="exam-form">
-        <!-- 判断题 -->
-        <h2>一、判断题（每题3分，共30分）</h2>
-        
-        <div class="question-card">
-          <span class="question-type judge">判断题</span>
-          <h3>1. MiMo Code只能使用中文与用户交互</h3>
-          <div class="options">
-            <label><input type="radio" name="q1" value="correct"> 错误</label>
-            <label><input type="radio" name="q1" value="wrong"> 正确</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type judge">判断题</span>
-          <h3>2. Build模式是只读模式，不能修改文件</h3>
-          <div class="options">
-            <label><input type="radio" name="q2" value="wrong"> 正确</label>
-            <label><input type="radio" name="q2" value="correct"> 错误</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type judge">判断题</span>
-          <h3>3. 按Tab键可以在Build、Plan、Compose三种模式之间切换</h3>
-          <div class="options">
-            <label><input type="radio" name="q3" value="correct"> 正确</label>
-            <label><input type="radio" name="q3" value="wrong"> 错误</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type judge">判断题</span>
-          <h3>4. MiMo Code的持久化记忆系统会自动保存会话状态</h3>
-          <div class="options">
-            <label><input type="radio" name="q4" value="correct"> 正确</label>
-            <label><input type="radio" name="q4" value="wrong"> 错误</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type judge">判断题</span>
-          <h3>5. /exit命令可以退出MiMo Code</h3>
-          <div class="options">
-            <label><input type="radio" name="q5" value="correct"> 正确</label>
-            <label><input type="radio" name="q5" value="wrong"> 错误</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type judge">判断题</span>
-          <h3>6. Plan模式可以修改代码文件</h3>
-          <div class="options">
-            <label><input type="radio" name="q6" value="wrong"> 正确</label>
-            <label><input type="radio" name="q6" value="correct"> 错误</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type judge">判断题</span>
-          <h3>7. 子代理系统可以并行处理多个任务</h3>
-          <div class="options">
-            <label><input type="radio" name="q7" value="correct"> 正确</label>
-            <label><input type="radio" name="q7" value="wrong"> 错误</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type judge">判断题</span>
-          <h3>8. /undo命令可以撤销上一步操作，包括文件修改</h3>
-          <div class="options">
-            <label><input type="radio" name="q8" value="correct"> 正确</label>
-            <label><input type="radio" name="q8" value="wrong"> 错误</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type judge">判断题</span>
-          <h3>9. MCP服务器会占用上下文空间，应该尽量多启用</h3>
-          <div class="options">
-            <label><input type="radio" name="q9" value="wrong"> 正确</label>
-            <label><input type="radio" name="q9" value="correct"> 错误</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type judge">判断题</span>
-          <h3>10. /themes命令可以切换MiMo Code的界面主题</h3>
-          <div class="options">
-            <label><input type="radio" name="q10" value="correct"> 正确</label>
-            <label><input type="radio" name="q10" value="wrong"> 错误</label>
-          </div>
-        </div>
-
-        <!-- 应用题 -->
-        <h2>二、应用题（每题7分，共70分）</h2>
-
-        <div class="question-card">
-          <span class="question-type apply">应用题</span>
-          <h3>11. 你想让MiMo Code分析一段代码但不修改它，应该使用哪种代理模式？</h3>
-          <div class="options">
-            <label><input type="radio" name="q11" value="wrong"> Build模式</label>
-            <label><input type="radio" name="q11" value="correct"> Plan模式</label>
-            <label><input type="radio" name="q11" value="wrong"> Compose模式</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type apply">应用题</span>
-          <h3>12. 如何让MiMo Code开始一个新的会话？</h3>
-          <div class="options">
-            <label><input type="radio" name="q12" value="wrong"> /exit</label>
-            <label><input type="radio" name="q12" value="correct"> /new</label>
-            <label><input type="radio" name="q12" value="wrong"> /clear</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type apply">应用题</span>
-          <h3>13. 你想在代码库中搜索所有包含"TODO"的注释，应该使用哪个工具？</h3>
-          <div class="options">
-            <label><input type="radio" name="q13" value="wrong"> bash</label>
-            <label><input type="radio" name="q13" value="correct"> grep</label>
-            <label><input type="radio" name="q13" value="wrong"> glob</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type apply">应用题</span>
-          <h3>14. 你操作失误想撤销，应该使用什么命令？</h3>
-          <div class="options">
-            <label><input type="radio" name="q14" value="correct"> /undo</label>
-            <label><input type="radio" name="q14" value="wrong"> /redo</label>
-            <label><input type="radio" name="q14" value="wrong"> /clear</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type apply">应用题</span>
-          <h3>15. 你想创建一个新的JavaScript文件，应该使用哪个工具？</h3>
-          <div class="options">
-            <label><input type="radio" name="q15" value="wrong"> edit</label>
-            <label><input type="radio" name="q15" value="correct"> write</label>
-            <label><input type="radio" name="q15" value="wrong"> read</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type apply">应用题</span>
-          <h3>16. 你想让MiMo Code执行npm install命令，应该使用哪个工具？</h3>
-          <div class="options">
-            <label><input type="radio" name="q16" value="correct"> bash</label>
-            <label><input type="radio" name="q16" value="wrong"> edit</label>
-            <label><input type="radio" name="q16" value="wrong"> write</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type apply">应用题</span>
-          <h3>17. 你想查看所有可用的AI模型，应该使用什么命令？</h3>
-          <div class="options">
-            <label><input type="radio" name="q17" value="wrong"> /help</label>
-            <label><input type="radio" name="q17" value="correct"> /models</label>
-            <label><input type="radio" name="q17" value="wrong"> /connect</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type apply">应用题</span>
-          <h3>18. 你想把当前对话分享给同事，应该使用什么命令？</h3>
-          <div class="options">
-            <label><input type="radio" name="q18" value="wrong"> /export</label>
-            <label><input type="radio" name="q18" value="correct"> /share</label>
-            <label><input type="radio" name="q18" value="wrong"> /sessions</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type apply">应用题</span>
-          <h3>19. 你想给MiMo Code添加搜索文档的功能，应该配置什么？</h3>
-          <div class="options">
-            <label><input type="radio" name="q19" value="wrong"> 主题</label>
-            <label><input type="radio" name="q19" value="correct"> MCP服务器</label>
-            <label><input type="radio" name="q19" value="wrong"> 技能</label>
-          </div>
-        </div>
-
-        <div class="question-card">
-          <span class="question-type apply">应用题</span>
-          <h3>20. 你想列出所有会话并在会话之间切换，应该使用什么命令？</h3>
-          <div class="options">
-            <label><input type="radio" name="q20" value="correct"> /sessions</label>
-            <label><input type="radio" name="q20" value="wrong"> /new</label>
-            <label><input type="radio" name="q20" value="wrong"> /compact</label>
-          </div>
-        </div>
-
-        <div style="text-align: center; margin: 40px 0;">
-          <button type="button" class="btn" onclick="submitExam()" style="padding: 16px 48px; font-size: 1.1rem;">
-            提交试卷
-          </button>
-        </div>
+        <!-- 题目将由JavaScript动态生成 -->
       </div>
 
       <div id="exam-result" style="display: none;">
@@ -249,45 +54,239 @@
   </footer>
 
   <script>
-    const answers = {
-      q1: 'correct', q2: 'correct', q3: 'correct', q4: 'correct', q5: 'correct',
-      q6: 'correct', q7: 'correct', q8: 'correct', q9: 'correct', q10: 'correct',
-      q11: 'correct', q12: 'correct', q13: 'correct', q14: 'correct', q15: 'correct',
-      q16: 'correct', q17: 'correct', q18: 'correct', q19: 'correct', q20: 'correct'
-    };
+    // 5套题库
+    const examPapers = [
+      // ========== 试卷1 ==========
+      {
+        id: 1,
+        judges: [
+          { q: "MiMo Code只能使用中文与用户交互", a: false },
+          { q: "Build模式是只读模式，不能修改文件", a: false },
+          { q: "按Tab键可以在Build、Plan、Compose三种模式之间切换", a: true },
+          { q: "MiMo Code的持久化记忆系统会自动保存会话状态", a: true },
+          { q: "/exit命令可以退出MiMo Code", a: true },
+          { q: "Plan模式可以修改代码文件", a: false },
+          { q: "子代理系统可以并行处理多个任务", a: true },
+          { q: "/undo命令可以撤销上一步操作，包括文件修改", a: true },
+          { q: "MCP服务器会占用上下文空间，应该尽量多启用", a: false },
+          { q: "/themes命令可以切换MiMo Code的界面主题", a: true }
+        ],
+        applies: [
+          { q: "你想让MiMo Code分析一段代码但不修改它，应该使用哪种代理模式？", opts: ["Build模式", "Plan模式", "Compose模式"], a: 1 },
+          { q: "如何让MiMo Code开始一个新的会话？", opts: ["/exit", "/new", "/clear"], a: 1 },
+          { q: "你想在代码库中搜索所有包含'TODO'的注释，应该使用哪个工具？", opts: ["bash", "grep", "glob"], a: 1 },
+          { q: "你操作失误想撤销，应该使用什么命令？", opts: ["/undo", "/redo", "/clear"], a: 0 },
+          { q: "你想创建一个新的JavaScript文件，应该使用哪个工具？", opts: ["edit", "write", "read"], a: 1 },
+          { q: "你想让MiMo Code执行npm install命令，应该使用哪个工具？", opts: ["bash", "edit", "write"], a: 0 },
+          { q: "你想查看所有可用的AI模型，应该使用什么命令？", opts: ["/help", "/models", "/connect"], a: 1 },
+          { q: "你想把当前对话分享给同事，应该使用什么命令？", opts: ["/export", "/share", "/sessions"], a: 1 },
+          { q: "你想给MiMo Code添加搜索文档的功能，应该配置什么？", opts: ["主题", "MCP服务器", "技能"], a: 1 },
+          { q: "你想列出所有会话并在会话之间切换，应该使用什么命令？", opts: ["/sessions", "/new", "/compact"], a: 0 }
+        ]
+      },
+      // ========== 试卷2 ==========
+      {
+        id: 2,
+        judges: [
+          { q: "MiMo Code必须联网才能使用", a: false },
+          { q: "Compose模式适合简单的代码修改任务", a: false },
+          { q: "/clear命令可以清除当前会话历史", a: true },
+          { q: "MiMo Code支持语音输入功能", a: true },
+          { q: "每个任务只能有一个子任务", a: false },
+          { q: "grep工具可以搜索文件内容", a: true },
+          { q: "/export命令可以导出对话为Markdown格式", a: true },
+          { q: "MiMo Code只能连接一个AI模型", a: false },
+          { q: "glob工具用于按文件名模式查找文件", a: true },
+          { q: "任务状态blocked表示任务已完成", a: false }
+        ],
+        applies: [
+          { q: "你想完整开发一个功能模块，需要规划、编码、测试，应该使用什么模式？", opts: ["Build模式", "Plan模式", "Compose模式"], a: 2 },
+          { q: "你想查看当前的项目记忆内容，应该使用什么命令？", opts: ["/memory", "/status", "/help"], a: 0 },
+          { q: "你想在项目中查找所有的.js文件，应该使用哪个工具？", opts: ["grep", "glob", "bash"], a: 1 },
+          { q: "你想重做之前撤销的操作，应该使用什么命令？", opts: ["/undo", "/redo", "/new"], a: 1 },
+          { q: "你想修改已有文件中的某一行代码，应该使用哪个工具？", opts: ["write", "edit", "read"], a: 1 },
+          { q: "你想运行Python脚本，应该使用哪个工具？", opts: ["bash", "edit", "write"], a: 0 },
+          { q: "你想切换到暗色主题，应该使用什么命令？", opts: ["/themes", "/config", "/settings"], a: 0 },
+          { q: "你想压缩会话历史以释放上下文空间，应该使用什么命令？", opts: ["/compact", "/clear", "/new"], a: 0 },
+          { q: "你想让MiMo连接GitHub仓库，应该配置什么？", opts: ["技能", "MCP服务器", "主题"], a: 1 },
+          { q: "你想获取某个网页的内容，应该使用哪个工具？", opts: ["webfetch", "websearch", "bash"], a: 0 }
+        ]
+      },
+      // ========== 试卷3 ==========
+      {
+        id: 3,
+        judges: [
+          { q: "MiMo Code是小米公司开发的AI编程助手", a: true },
+          { q: "Plan模式拥有完整的工具权限", a: false },
+          { q: "持久化记忆只保存在一个文件中", a: false },
+          { q: "/help命令可以显示帮助信息", a: true },
+          { q: "子代理可以独立处理特定任务", a: true },
+          { q: "MCP是Model Context Protocol的缩写", a: true },
+          { q: "write工具会覆盖整个文件内容", a: true },
+          { q: "MiMo Code不支持自定义技能", a: false },
+          { q: "/sessions命令可以列出所有会话", a: true },
+          { q: "bash工具不能执行git命令", a: false }
+        ],
+        applies: [
+          { q: "你想了解项目的整体架构但不修改代码，应该使用什么模式？", opts: ["Build模式", "Plan模式", "Compose模式"], a: 1 },
+          { q: "你想创建一个新的任务来跟踪工作进度，应该怎么操作？", opts: ["直接告诉MiMo", "使用/todowrite命令", "编辑配置文件"], a: 0 },
+          { q: "你想搜索代码中所有的函数定义，应该使用哪个工具？", opts: ["glob", "grep", "read"], a: 1 },
+          { q: "你想删除上一轮对话的所有更改，应该使用什么命令？", opts: ["/undo", "/clear", "/new"], a: 0 },
+          { q: "你想从零创建一个项目配置文件，应该使用哪个工具？", opts: ["edit", "read", "write"], a: 2 },
+          { q: "你想让MiMo运行测试套件，应该使用哪个工具？", opts: ["write", "edit", "bash"], a: 2 },
+          { q: "你想添加一个AI提供商的API密钥，应该使用什么命令？", opts: ["/models", "/connect", "/config"], a: 1 },
+          { q: "你想把会话恢复到之前的状态，应该使用什么命令？", opts: ["/new", "/sessions", "/redo"], a: 1 },
+          { q: "你想让MiMo能够访问Sentry监控平台，应该配置什么？", opts: ["技能系统", "MCP服务器", "主题"], a: 1 },
+          { q: "你想让MiMo在执行操作前询问你的意见，应该配置什么？", opts: ["权限设置", "主题", "快捷键"], a: 0 }
+        ]
+      },
+      // ========== 试卷4 ==========
+      {
+        id: 4,
+        judges: [
+          { q: "MiMo Code支持三种代理模式", a: true },
+          { q: "Build模式主要用于分析和规划", a: false },
+          { q: "/redo命令只能在/git仓库中使用", a: true },
+          { q: "MiMo Code的记忆系统基于SQLite", a: true },
+          { q: "edit工具可以创建新文件", a: false },
+          { q: "Compose模式包含内置技能如plan、review、tdd", a: true },
+          { q: "websearch工具需要API密钥才能使用", a: false },
+          { q: "/thinking命令可以显示AI的思考过程", a: true },
+          { q: "MiMo Code不支持Windows系统", a: false },
+          { q: "MCP服务器的配置在mimocode.json文件中", a: true }
+        ],
+        applies: [
+          { q: "你想让MiMo帮你审查刚写的代码，应该使用什么模式？", opts: ["Build模式", "Plan模式", "Compose模式"], a: 2 },
+          { q: "你想查看当前Git仓库的状态，应该怎么操作？", opts: ["运行git status", "让MiMo用bash工具执行", "查看配置文件"], a: 1 },
+          { q: "你想查找所有以.test.js结尾的测试文件，应该使用哪个工具？", opts: ["grep", "glob", "read"], a: 1 },
+          { q: "你想取消分享已经分享的会话，应该使用什么命令？", opts: ["/share", "/unshare", "/export"], a: 1 },
+          { q: "你想读取某个文件的内容来了解项目结构，应该使用哪个工具？", opts: ["edit", "write", "read"], a: 2 },
+          { q: "你想让MiMo执行一条shell命令，应该使用哪个工具？", opts: ["bash", "edit", "write"], a: 0 },
+          { q: "你想创建或更新AGENTS.md规则文件，应该使用什么命令？", opts: ["/init", "/new", "/help"], a: 0 },
+          { q: "你想切换到之前的某个会话继续工作，应该使用什么命令？", opts: ["/new", "/sessions", "/compact"], a: 1 },
+          { q: "你想让MiMo能够搜索GitHub上的代码示例，应该配置什么？", opts: ["本地MCP服务器", "远程MCP服务器", "技能文件"], a: 1 },
+          { q: "你想让某些工具在执行前需要你确认，应该设置什么？", opts: ["permission为ask", "permission为deny", "permission为allow"], a: 0 }
+        ]
+      },
+      // ========== 试卷5 ==========
+      {
+        id: 5,
+        judges: [
+          { q: "MiMo Code是一款终端原生的AI编码助手", a: true },
+          { q: "Plan模式可以运行npm install命令", a: false },
+          { q: "MiMo Code支持语音输入功能", a: true },
+          { q: "/exit命令可以退出MiMo Code", a: true },
+          { q: "子代理会共享当前会话的上下文", a: true },
+          { q: "write工具由edit权限控制", a: true },
+          { q: "MiMo Code只支持OpenAI的模型", a: false },
+          { q: "/compact命令可以压缩会话历史", a: true },
+          { q: "glob工具支持正则表达式搜索", a: false },
+          { q: "MiMo Code的任务系统支持树形结构", a: true }
+        ],
+        applies: [
+          { q: "你想让MiMo帮你实现一个完整的用户登录功能，应该使用什么模式？", opts: ["Build模式", "Plan模式", "Compose模式"], a: 2 },
+          { q: "你想查看MiMo Code有哪些内置工具，应该怎么了解？", opts: ["查看帮助文档", "运行/help", "以上都可以"], a: 2 },
+          { q: "你想在多个文件中搜索'function'关键字，应该使用哪个工具？", opts: ["glob", "grep", "read"], a: 1 },
+          { q: "你想打开外部编辑器来编写长消息，应该使用什么命令？", opts: ["/editor", "/export", "/share"], a: 0 },
+          { q: "你想完全重写一个文件的内容，应该使用哪个工具？", opts: ["edit", "write", "patch"], a: 1 },
+          { q: "你想让MiMo克隆一个GitHub仓库，应该使用哪个工具？", opts: ["bash", "edit", "write"], a: 0 },
+          { q: "你想切换MiMo Code的模型，应该使用什么命令？", opts: ["/connect", "/models", "/themes"], a: 1 },
+          { q: "你想查看所有已完成和进行中的任务，应该怎么操作？", opts: ["告诉MiMo列出任务", "查看配置文件", "重启MiMo"], a: 0 },
+          { q: "你想让MiMo能够访问本地数据库，应该配置什么？", opts: ["本地MCP服务器", "远程MCP服务器", "环境变量"], a: 0 },
+          { q: "你想让MiMo的所有文件修改操作都需要你确认，应该设置什么？", opts: ["bash为ask", "edit为ask", "read为ask"], a: 1 }
+        ]
+      }
+    ];
 
-    const pointValues = {
-      q1: 3, q2: 3, q3: 3, q4: 3, q5: 3,
-      q6: 3, q7: 3, q8: 3, q9: 3, q10: 3,
-      q11: 7, q12: 7, q13: 7, q14: 7, q15: 7,
-      q16: 7, q17: 7, q18: 7, q19: 7, q20: 7
-    };
+    // 随机选择一套试卷
+    let currentPaper;
+    function selectRandomPaper() {
+      const randomIndex = Math.floor(Math.random() * examPapers.length);
+      currentPaper = examPapers[randomIndex];
+      document.getElementById('paper-id').textContent = `试卷 ${currentPaper.id}（共${examPapers.length}套）`;
+    }
 
+    // 渲染试卷
+    function renderExam() {
+      selectRandomPaper();
+      const form = document.getElementById('exam-form');
+      let html = '<h2>一、判断题（每题3分，共30分）</h2>';
+      
+      currentPaper.judges.forEach((item, index) => {
+        html += `
+          <div class="question-card">
+            <span class="question-type judge">判断题</span>
+            <h3>${index + 1}. ${item.q}</h3>
+            <div class="options">
+              <label><input type="radio" name="j${index}" value="true"> 正确</label>
+              <label><input type="radio" name="j${index}" value="false"> 错误</label>
+            </div>
+          </div>
+        `;
+      });
+
+      html += '<h2>二、应用题（每题7分，共70分）</h2>';
+      
+      currentPaper.applies.forEach((item, index) => {
+        html += `
+          <div class="question-card">
+            <span class="question-type apply">应用题</span>
+            <h3>${index + 11}. ${item.q}</h3>
+            <div class="options">
+              ${item.opts.map((opt, optIndex) => `
+                <label><input type="radio" name="a${index}" value="${optIndex}"> ${opt}</label>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      });
+
+      html += `
+        <div style="text-align: center; margin: 40px 0;">
+          <button type="button" class="btn" onclick="submitExam()" style="padding: 16px 48px; font-size: 1.1rem;">
+            提交试卷
+          </button>
+        </div>
+      `;
+
+      form.innerHTML = html;
+    }
+
+    // 提交试卷
     function submitExam() {
       let score = 0;
-      let allAnswered = true;
-
-      for (let i = 1; i <= 20; i++) {
-        const qName = 'q' + i;
-        const selected = document.querySelector(`input[name="${qName}"]:checked`);
-        
+      
+      // 检查判断题
+      for (let i = 0; i < 10; i++) {
+        const selected = document.querySelector(`input[name="j${i}"]:checked`);
         if (!selected) {
-          allAnswered = false;
-          alert(`请完成第 ${i} 题！`);
+          alert(`请完成第 ${i + 1} 题！`);
           return;
         }
-        
-        if (selected.value === 'correct') {
-          score += pointValues[qName];
+        const userAnswer = selected.value === 'true';
+        if (userAnswer === currentPaper.judges[i].a) {
+          score += 3;
         }
       }
 
-      if (!allAnswered) return;
+      // 检查应用题
+      for (let i = 0; i < 10; i++) {
+        const selected = document.querySelector(`input[name="a${i}"]:checked`);
+        if (!selected) {
+          alert(`请完成第 ${i + 11} 题！`);
+          return;
+        }
+        if (parseInt(selected.value) === currentPaper.applies[i].a) {
+          score += 7;
+        }
+      }
 
+      // 显示结果
       const resultDiv = document.getElementById('exam-result');
       const formDiv = document.getElementById('exam-form');
       
       formDiv.style.display = 'none';
+      document.getElementById('exam-info').style.display = 'none';
       resultDiv.style.display = 'block';
 
       const passed = score >= 90;
@@ -296,23 +295,23 @@
       if (passed) {
         resultDiv.innerHTML = `
           <div class="score-display">
-            <h2>恭喜你通过考试！</h2>
+            <h2>🎉 恭喜你通过考试！</h2>
             <h1>${score} 分</h1>
             <p>你已获得毕业资格！</p>
             <a href="20-certificate.html?score=${score}&date=${encodeURIComponent(currentDate)}" class="btn" style="background: white; color: #667eea; margin-top: 20px;">
-              查看毕业证书
+              🎓 查看毕业证书
             </a>
           </div>
         `;
       } else {
         resultDiv.innerHTML = `
           <div class="score-display" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">
-            <h2>很遗憾，未达到毕业标准</h2>
+            <h2>😢 很遗憾，未达到毕业标准</h2>
             <h1>${score} 分</h1>
             <p>需要90分以上才能获得毕业证书</p>
-            <p>建议复习后重新考试</p>
+            <p style="margin-top: 12px;">建议复习后重新考试，下次会随机抽取不同的试卷！</p>
             <button onclick="location.reload()" class="btn" style="background: white; color: #ef4444; margin-top: 20px;">
-              重新考试
+              🔄 重新考试
             </button>
           </div>
         `;
@@ -320,6 +319,9 @@
 
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    // 页面加载时渲染试卷
+    renderExam();
   </script>
 
   <script src="../js/progress.js"></script>
