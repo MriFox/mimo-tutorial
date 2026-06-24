@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>毕业考试 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content exam-container">
+      <h1>🎓 MiMo Code 毕业考试</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">📝</span>
+        <div>满分100分，90分以上即可获得毕业证书！共20道题，判断题10道（每题3分），应用题10道（每题7分）。</div>
+      </div>
+      
+      <div id="exam-form">
+        <!-- 判断题 -->
+        <h2>一、判断题（每题3分，共30分）</h2>
+        
+        <div class="question-card">
+          <span class="question-type judge">判断题</span>
+          <h3>1. MiMo Code只能使用中文与用户交互</h3>
+          <div class="options">
+            <label><input type="radio" name="q1" value="correct"> 错误</label>
+            <label><input type="radio" name="q1" value="wrong"> 正确</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type judge">判断题</span>
+          <h3>2. Build模式是只读模式，不能修改文件</h3>
+          <div class="options">
+            <label><input type="radio" name="q2" value="wrong"> 正确</label>
+            <label><input type="radio" name="q2" value="correct"> 错误</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type judge">判断题</span>
+          <h3>3. 按Tab键可以在Build、Plan、Compose三种模式之间切换</h3>
+          <div class="options">
+            <label><input type="radio" name="q3" value="correct"> 正确</label>
+            <label><input type="radio" name="q3" value="wrong"> 错误</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type judge">判断题</span>
+          <h3>4. MiMo Code的持久化记忆系统会自动保存会话状态</h3>
+          <div class="options">
+            <label><input type="radio" name="q4" value="correct"> 正确</label>
+            <label><input type="radio" name="q4" value="wrong"> 错误</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type judge">判断题</span>
+          <h3>5. /exit命令可以退出MiMo Code</h3>
+          <div class="options">
+            <label><input type="radio" name="q5" value="correct"> 正确</label>
+            <label><input type="radio" name="q5" value="wrong"> 错误</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type judge">判断题</span>
+          <h3>6. Plan模式可以修改代码文件</h3>
+          <div class="options">
+            <label><input type="radio" name="q6" value="wrong"> 正确</label>
+            <label><input type="radio" name="q6" value="correct"> 错误</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type judge">判断题</span>
+          <h3>7. 子代理系统可以并行处理多个任务</h3>
+          <div class="options">
+            <label><input type="radio" name="q7" value="correct"> 正确</label>
+            <label><input type="radio" name="q7" value="wrong"> 错误</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type judge">判断题</span>
+          <h3>8. /undo命令可以撤销上一步操作，包括文件修改</h3>
+          <div class="options">
+            <label><input type="radio" name="q8" value="correct"> 正确</label>
+            <label><input type="radio" name="q8" value="wrong"> 错误</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type judge">判断题</span>
+          <h3>9. MCP服务器会占用上下文空间，应该尽量多启用</h3>
+          <div class="options">
+            <label><input type="radio" name="q9" value="wrong"> 正确</label>
+            <label><input type="radio" name="q9" value="correct"> 错误</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type judge">判断题</span>
+          <h3>10. /themes命令可以切换MiMo Code的界面主题</h3>
+          <div class="options">
+            <label><input type="radio" name="q10" value="correct"> 正确</label>
+            <label><input type="radio" name="q10" value="wrong"> 错误</label>
+          </div>
+        </div>
+
+        <!-- 应用题 -->
+        <h2>二、应用题（每题7分，共70分）</h2>
+
+        <div class="question-card">
+          <span class="question-type apply">应用题</span>
+          <h3>11. 你想让MiMo Code分析一段代码但不修改它，应该使用哪种代理模式？</h3>
+          <div class="options">
+            <label><input type="radio" name="q11" value="wrong"> Build模式</label>
+            <label><input type="radio" name="q11" value="correct"> Plan模式</label>
+            <label><input type="radio" name="q11" value="wrong"> Compose模式</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type apply">应用题</span>
+          <h3>12. 如何让MiMo Code开始一个新的会话？</h3>
+          <div class="options">
+            <label><input type="radio" name="q12" value="wrong"> /exit</label>
+            <label><input type="radio" name="q12" value="correct"> /new</label>
+            <label><input type="radio" name="q12" value="wrong"> /clear</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type apply">应用题</span>
+          <h3>13. 你想在代码库中搜索所有包含"TODO"的注释，应该使用哪个工具？</h3>
+          <div class="options">
+            <label><input type="radio" name="q13" value="wrong"> bash</label>
+            <label><input type="radio" name="q13" value="correct"> grep</label>
+            <label><input type="radio" name="q13" value="wrong"> glob</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type apply">应用题</span>
+          <h3>14. 你操作失误想撤销，应该使用什么命令？</h3>
+          <div class="options">
+            <label><input type="radio" name="q14" value="correct"> /undo</label>
+            <label><input type="radio" name="q14" value="wrong"> /redo</label>
+            <label><input type="radio" name="q14" value="wrong"> /clear</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type apply">应用题</span>
+          <h3>15. 你想创建一个新的JavaScript文件，应该使用哪个工具？</h3>
+          <div class="options">
+            <label><input type="radio" name="q15" value="wrong"> edit</label>
+            <label><input type="radio" name="q15" value="correct"> write</label>
+            <label><input type="radio" name="q15" value="wrong"> read</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type apply">应用题</span>
+          <h3>16. 你想让MiMo Code执行npm install命令，应该使用哪个工具？</h3>
+          <div class="options">
+            <label><input type="radio" name="q16" value="correct"> bash</label>
+            <label><input type="radio" name="q16" value="wrong"> edit</label>
+            <label><input type="radio" name="q16" value="wrong"> write</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type apply">应用题</span>
+          <h3>17. 你想查看所有可用的AI模型，应该使用什么命令？</h3>
+          <div class="options">
+            <label><input type="radio" name="q17" value="wrong"> /help</label>
+            <label><input type="radio" name="q17" value="correct"> /models</label>
+            <label><input type="radio" name="q17" value="wrong"> /connect</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type apply">应用题</span>
+          <h3>18. 你想把当前对话分享给同事，应该使用什么命令？</h3>
+          <div class="options">
+            <label><input type="radio" name="q18" value="wrong"> /export</label>
+            <label><input type="radio" name="q18" value="correct"> /share</label>
+            <label><input type="radio" name="q18" value="wrong"> /sessions</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type apply">应用题</span>
+          <h3>19. 你想给MiMo Code添加搜索文档的功能，应该配置什么？</h3>
+          <div class="options">
+            <label><input type="radio" name="q19" value="wrong"> 主题</label>
+            <label><input type="radio" name="q19" value="correct"> MCP服务器</label>
+            <label><input type="radio" name="q19" value="wrong"> 技能</label>
+          </div>
+        </div>
+
+        <div class="question-card">
+          <span class="question-type apply">应用题</span>
+          <h3>20. 你想列出所有会话并在会话之间切换，应该使用什么命令？</h3>
+          <div class="options">
+            <label><input type="radio" name="q20" value="correct"> /sessions</label>
+            <label><input type="radio" name="q20" value="wrong"> /new</label>
+            <label><input type="radio" name="q20" value="wrong"> /compact</label>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin: 40px 0;">
+          <button type="button" class="btn" onclick="submitExam()" style="padding: 16px 48px; font-size: 1.1rem;">
+            提交试卷
+          </button>
+        </div>
+      </div>
+
+      <div id="exam-result" style="display: none;">
+        <!-- 结果将在这里显示 -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script>
+    const answers = {
+      q1: 'correct', q2: 'correct', q3: 'correct', q4: 'correct', q5: 'correct',
+      q6: 'correct', q7: 'correct', q8: 'correct', q9: 'correct', q10: 'correct',
+      q11: 'correct', q12: 'correct', q13: 'correct', q14: 'correct', q15: 'correct',
+      q16: 'correct', q17: 'correct', q18: 'correct', q19: 'correct', q20: 'correct'
+    };
+
+    const pointValues = {
+      q1: 3, q2: 3, q3: 3, q4: 3, q5: 3,
+      q6: 3, q7: 3, q8: 3, q9: 3, q10: 3,
+      q11: 7, q12: 7, q13: 7, q14: 7, q15: 7,
+      q16: 7, q17: 7, q18: 7, q19: 7, q20: 7
+    };
+
+    function submitExam() {
+      let score = 0;
+      let allAnswered = true;
+
+      for (let i = 1; i <= 20; i++) {
+        const qName = 'q' + i;
+        const selected = document.querySelector(`input[name="${qName}"]:checked`);
+        
+        if (!selected) {
+          allAnswered = false;
+          alert(`请完成第 ${i} 题！`);
+          return;
+        }
+        
+        if (selected.value === 'correct') {
+          score += pointValues[qName];
+        }
+      }
+
+      if (!allAnswered) return;
+
+      const resultDiv = document.getElementById('exam-result');
+      const formDiv = document.getElementById('exam-form');
+      
+      formDiv.style.display = 'none';
+      resultDiv.style.display = 'block';
+
+      const passed = score >= 90;
+      const currentDate = new Date().toLocaleDateString('zh-CN');
+      
+      if (passed) {
+        resultDiv.innerHTML = `
+          <div class="score-display">
+            <h2>恭喜你通过考试！</h2>
+            <h1>${score} 分</h1>
+            <p>你已获得毕业资格！</p>
+            <a href="20-certificate.html?score=${score}&date=${encodeURIComponent(currentDate)}" class="btn" style="background: white; color: #667eea; margin-top: 20px;">
+              查看毕业证书
+            </a>
+          </div>
+        `;
+      } else {
+        resultDiv.innerHTML = `
+          <div class="score-display" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">
+            <h2>很遗憾，未达到毕业标准</h2>
+            <h1>${score} 分</h1>
+            <p>需要90分以上才能获得毕业证书</p>
+            <p>建议复习后重新考试</p>
+            <button onclick="location.reload()" class="btn" style="background: white; color: #ef4444; margin-top: 20px;">
+              重新考试
+            </button>
+          </div>
+        `;
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

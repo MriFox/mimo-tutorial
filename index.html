@@ -146,17 +146,8 @@
           </div>
         </div>
 
-        <div class="card" data-chapter="english">
-          <h3>13. 必备英语</h3>
-          <p>掌握编程常用词汇和报错信息含义</p>
-          <div class="card-footer">
-            <span>预计 15 分钟</span>
-            <a href="chapters/13-english.html" class="btn btn-outline">开始</a>
-          </div>
-        </div>
-
         <div class="card" data-chapter="tools">
-          <h3>14. 内置工具详解</h3>
+          <h3>13. 内置工具详解</h3>
           <p>bash、edit、grep等工具的使用方法</p>
           <div class="card-footer">
             <span>预计 20 分钟</span>
@@ -165,7 +156,7 @@
         </div>
 
         <div class="card" data-chapter="mcp">
-          <h3>15. MCP扩展工具</h3>
+          <h3>14. MCP扩展工具</h3>
           <p>通过插件扩展MiMo Code的功能</p>
           <div class="card-footer">
             <span>预计 15 分钟</span>
@@ -174,7 +165,7 @@
         </div>
 
         <div class="card" data-chapter="themes">
-          <h3>16. 主题美化</h3>
+          <h3>15. 主题美化</h3>
           <p>更换界面主题，让终端更酷炫</p>
           <div class="card-footer">
             <span>预计 10 分钟</span>
@@ -183,7 +174,7 @@
         </div>
 
         <div class="card" data-chapter="slash-commands">
-          <h3>17. 斜杠命令大全</h3>
+          <h3>16. 斜杠命令大全</h3>
           <p>17+个命令完整列表和快捷键</p>
           <div class="card-footer">
             <span>预计 15 分钟</span>
@@ -192,7 +183,7 @@
         </div>
 
         <div class="card" data-chapter="troubleshooting">
-          <h3>18. 故障排除</h3>
+          <h3>17. 故障排除</h3>
           <p>常见问题解决方案大全</p>
           <div class="card-footer">
             <span>预计 15 分钟</span>
@@ -200,72 +191,19 @@
           </div>
         </div>
       </div>
+
+      <div class="english-special">
+        <h3>🔤 附录：必备英语</h3>
+        <p>编程世界以英语为主，掌握这些词汇能让你更顺畅地使用MiMo Code！</p>
+        <p style="margin-top: 12px;">包含：编程基础词汇、常见报错词汇、对话常用句、Git命令等</p>
+        <a href="chapters/13-english.html" class="btn" style="margin-top: 16px;">学习必备英语</a>
+      </div>
     </section>
 
     <section class="container">
       <div class="content">
-        <h2>看看MiMo Code能做什么</h2>
-        <p>它不只是聊天，还能帮你写代码、改bug、做项目！</p>
-        
-        <h3>让它写代码</h3>
-        <div class="code-demo">
-          <div class="header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <pre><code>> 帮我写一个Python函数，判断一个数是否是质数
-
-# MiMo Code会回复：
-def is_prime(n):
-    if n < 2:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True</code></pre>
-        </div>
-        
-        <h3>让它解释代码</h3>
-        <div class="code-demo">
-          <div class="header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <pre><code>> 解释这段代码：
-arr.filter(x => x > 5).map(x => x * 2)
-
-# MiMo Code会回复：
-这段代码做了两件事：
-1. filter: 筛选出大于5的元素
-2. map: 把每个元素乘以2
-最终返回一个新数组。</code></pre>
-        </div>
-        
-        <h3>让它改bug</h3>
-        <div class="code-demo">
-          <div class="header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <pre><code>> 我的代码报错：TypeError: Cannot read property 'map' of undefined
-
-# MiMo Code会回复：
-问题在于数组可能为空。修复方法：
-if (Array.isArray(arr)) {
-  return arr.map(...);
-}
-return [];</code></pre>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="container">
-      <div class="content">
         <h2>关于本教程</h2>
-        <p>本教程专为零基础用户设计，通过12个章节带你全面掌握MiMo Code的使用方法。</p>
+        <p>本教程专为零基础用户设计，通过18个章节带你全面掌握MiMo Code的使用方法。</p>
         <p>每个章节都包含：</p>
         <ul>
           <li>清晰的概念解释</li>
@@ -274,8 +212,18 @@ return [];</code></pre>
           <li>练习和小结</li>
         </ul>
         <div class="tip">
-          学习建议：按顺序学习，每完成一章点击"标记为完成"，系统会自动保存你的进度。
+          学习建议：按顺序学习，每完成一章点击"标记为完成"，系统会自动保存你的进度。学完后参加毕业考试，获取毕业证书！
         </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="exam-cta">
+        <div class="exam-cta-icon">🎓</div>
+        <h2>毕业考试</h2>
+        <p>完成所有章节学习后，参加毕业考试检验学习成果！</p>
+        <p>满分100分，90分以上即可获得毕业证书</p>
+        <a href="chapters/19-exam.html" class="btn">开始考试</a>
       </div>
     </section>
   </main>
