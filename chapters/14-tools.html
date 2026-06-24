@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>内置工具详解 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>14. 内置工具详解</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">🔧</span>
+        <div>MiMo Code自带一堆强大的工具，就像瑞士军刀一样！了解它们，你就能让MiMo做更多事情！</div>
+      </div>
+      
+      <h2>14.1 什么是工具？</h2>
+      
+      <p>工具就是MiMo Code的"超能力"。有了它们，MiMo不仅能聊天，还能：</p>
+      
+      <ul>
+        <li>执行命令</li>
+        <li>读写文件</li>
+        <li>搜索代码</li>
+        <li>浏览网页</li>
+      </ul>
+      
+      <div class="key-point">
+        <h3>工具 = MiMo的手和脚</h3>
+        <p>没有工具，MiMo只能"动嘴"；有了工具，它能"动手干活"！</p>
+      </div>
+      
+      <h2>14.2 工具一览表</h2>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">工具</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">作用</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">使用场景</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>bash</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">执行终端命令</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">运行程序、安装依赖</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>edit</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">精确编辑文件</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">修改代码、修复bug</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>write</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">创建/覆盖文件</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">新建文件、完全重写</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>read</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">读取文件内容</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">查看代码、理解项目</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>grep</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">搜索文件内容</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">查找函数、定位问题</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>glob</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">查找文件</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">按模式找文件</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>webfetch</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">获取网页内容</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">查阅文档、研究资料</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>question</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">向你提问</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">澄清需求、确认选择</td>
+        </tr>
+      </table>
+      
+      <h2>14.3 bash工具</h2>
+      
+      <div class="key-point">
+        <h3>最强工具：执行任何终端命令</h3>
+        <p>MiMo可以用它运行npm、git、python等任何命令！</p>
+      </div>
+      
+      <div class="dialog-box">
+        <div class="line">帮我运行npm install安装依赖</div>
+        <div class="line ai">好的！正在执行npm install...</div>
+        <div class="line ai">[执行命令] npm install</div>
+        <div class="line ai">依赖安装完成！</div>
+      </div>
+      
+      <p>你可以让MiMo执行：</p>
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>> 运行 npm test
+> 执行 python script.py
+> 运行 git status
+> 安装这个包：npm install lodash</code></pre>
+      </div>
+      
+      <h2>14.4 edit工具</h2>
+      
+      <p>精确修改文件内容，只改你指定的部分：</p>
+      
+      <div class="dialog-box">
+        <div class="line">把第10行的 console.log 改成 console.error</div>
+        <div class="line ai">好的！我来精确修改...</div>
+        <div class="line ai">[edit工具] 已将第10行的 console.log 改为 console.error</div>
+      </div>
+      
+      <div class="tip">
+        💡 edit工具只替换精确匹配的内容，不会误改其他代码！
+      </div>
+      
+      <h2>14.5 write工具</h2>
+      
+      <p>创建新文件或完全重写文件：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>> 创建文件 config.js，内容是数据库配置
+> 重写 index.html，使用新的设计风格</code></pre>
+      </div>
+      
+      <div class="warning">
+        ⚠️ write工具会覆盖整个文件，小心使用！
+      </div>
+      
+      <h2>14.6 grep工具</h2>
+      
+      <p>在代码库中搜索内容，支持正则表达式：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>> 搜索所有包含 TODO 的注释
+> 查找哪里用了 fetch 函数
+> 搜索所有的 API 接口地址</code></pre>
+      </div>
+      
+      <div class="fun-fact">
+        <span class="emoji">🔍</span>
+        <div>grep就像一个超级搜索器，能帮你在千万行代码中快速定位！</div>
+      </div>
+      
+      <h2>14.7 glob工具</h2>
+      
+      <p>按文件名模式查找文件：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>> 找到所有的 .js 文件
+> 查找 src 目录下的所有 .ts 文件
+> 找到所有的测试文件</code></pre>
+      </div>
+      
+      <h2>14.8 实战组合</h2>
+      
+      <div class="key-point">
+        <h3>工具组合使用，效率翻倍！</h3>
+      </div>
+      
+      <div class="dialog-box">
+        <div class="line">先用grep找到所有的TODO，然后帮我逐个处理</div>
+        <div class="line ai">好的！我来搜索所有TODO...</div>
+        <div class="line ai">找到了5个TODO：</div>
+        <div class="line ai">1. src/utils.js:42 - TODO: 添加错误处理</div>
+        <div class="line ai">2. src/api.js:18 - TODO: 实现缓存</div>
+        <div class="line ai">...</div>
+        <div class="line ai">现在开始逐个处理...</div>
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="tools">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="13-english.html">← 上一章：必备英语</a>
+      <a href="15-mcp.html">下一章：MCP扩展 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

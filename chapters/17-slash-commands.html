@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>斜杠命令大全 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>17. 斜杠命令大全</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">⚡</span>
+        <div>斜杠命令是MiMo Code的"快捷操作"，一个命令搞定复杂操作！</div>
+      </div>
+      
+      <h2>17.1 会话管理命令</h2>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">命令</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">作用</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">快捷键</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/new</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">开始新会话</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x n</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/clear</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">清除当前会话（同/new）</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">-</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/sessions</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">列出所有会话</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x l</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/compact</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">压缩会话历史</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x c</code></td>
+        </tr>
+      </table>
+      
+      <h2>17.2 导出分享命令</h2>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">命令</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">作用</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">快捷键</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/export</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">导出对话为Markdown</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x x</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/share</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">分享当前会话</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x s</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/unshare</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">取消分享</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">-</td>
+        </tr>
+      </table>
+      
+      <h2>17.3 撤销重做命令</h2>
+      
+      <div class="key-point">
+        <h3>后悔药来了！</h3>
+        <p>操作错了？用undo/redo挽回！</p>
+      </div>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">命令</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">作用</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">快捷键</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/undo</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">撤销上一步操作</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x u</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/redo</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">重做被撤销的操作</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x r</code></td>
+        </tr>
+      </table>
+      
+      <div class="tip">
+        💡 undo/redo不仅撤销对话，还会还原文件修改！（需要Git仓库）
+      </div>
+      
+      <h2>17.4 其他实用命令</h2>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">命令</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">作用</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">快捷键</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/exit</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">退出MiMo Code</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x q</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/help</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">显示帮助</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x h</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/models</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">列出可用模型</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x m</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/themes</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">切换主题</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x t</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/thinking</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">显示/隐藏思考过程</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">-</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/init</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">创建AGENTS.md文件</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x i</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/connect</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">添加AI提供商</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">-</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>/editor</code></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">打开外部编辑器</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>ctrl+x e</code></td>
+        </tr>
+      </table>
+      
+      <h2>17.5 常用组合技</h2>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code># 保存对话发给同事
+/share
+/export
+
+# 操作错了想撤销
+/undo
+
+# 清空重来
+/new
+
+# 换个好看的主题
+/themes</code></pre>
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="slash-commands">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="16-themes.html">← 上一章：主题美化</a>
+      <a href="18-troubleshooting.html">下一章：故障排除 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

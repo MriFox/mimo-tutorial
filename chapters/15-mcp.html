@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCP扩展工具 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>15. MCP扩展工具</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">🔌</span>
+        <div>MCP就像给MiMo Code装"插件"！有了它，MiMo能连接数据库、调用API、使用第三方服务！</div>
+      </div>
+      
+      <h2>15.1 什么是MCP？</h2>
+      
+      <p>MCP（Model Context Protocol）是一个协议，让AI能连接外部工具和服务。</p>
+      
+      <div class="key-point">
+        <h3>MCP = MiMo的"应用商店"</h3>
+        <p>想让MiMo做什么，就装什么插件！</p>
+      </div>
+      
+      <h2>15.2 常用MCP服务器</h2>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">MCP</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">作用</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">使用场景</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>Context7</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">搜索文档</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">查阅最新文档</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>Sentry</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">错误监控</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">查看线上bug</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>GitHub</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">代码仓库</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">管理PR、Issue</td>
+        </tr>
+      </table>
+      
+      <h2>15.3 配置MCP</h2>
+      
+      <p>在配置文件中添加MCP服务器：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>{
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp"
+    }
+  }
+}</code></pre>
+      </div>
+      
+      <h2>15.4 使用MCP</h2>
+      
+      <div class="dialog-box">
+        <div class="line">帮我查一下React最新的hooks文档，用context7</div>
+        <div class="line ai">好的！我来用Context7搜索React文档...</div>
+        <div class="line ai">[Context7工具] 搜索到最新的hooks文档...</div>
+        <div class="line ai">根据文档，useEffect的最新用法是...</div>
+      </div>
+      
+      <div class="fun-fact">
+        <span class="emoji">💡</span>
+        <div>在提示词里加上"用xxx工具"就能指定使用哪个MCP！</div>
+      </div>
+      
+      <h2>15.5 注意事项</h2>
+      
+      <div class="warning">
+        ⚠️ MCP服务器会占用上下文空间，不要启用太多！建议只启用常用的几个。
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="mcp">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="14-tools.html">← 上一章：内置工具</a>
+      <a href="16-themes.html">下一章：主题美化 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主题美化 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>16. 主题美化</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">🎨</span>
+        <div>MiMo Code支持多种主题，让你的终端变得更酷炫！</div>
+      </div>
+      
+      <h2>16.1 内置主题</h2>
+      
+      <p>MiMo Code自带多个主题：</p>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">主题名</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">风格</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>mimocode</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">默认主题</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>system</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">自动适配终端</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>tokyonight</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">深蓝色调</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>catppuccin</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">柔和粉彩</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>gruvbox</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">复古暖色</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>nord</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">北欧冷色</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>matrix</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">黑客帝国风</td>
+        </tr>
+      </table>
+      
+      <h2>16.2 切换主题</h2>
+      
+      <div class="key-point">
+        <h3>两种方式切换主题</h3>
+      </div>
+      
+      <h3>方式1：命令切换</h3>
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>/themes</code></pre>
+      </div>
+      <p>会弹出主题选择界面，用方向键选择，回车确认。</p>
+      
+      <h3>方式2：配置文件</h3>
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>{
+  "theme": "tokyonight"
+}</code></pre>
+      </div>
+      
+      <h2>16.3 自定义主题</h2>
+      
+      <p>想要独一无二？可以创建自己的主题！</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code># 创建主题目录
+mkdir -p ~/.config/mimocode/themes
+
+# 创建主题文件
+vim ~/.config/mimocode/themes/my-theme.json</code></pre>
+      </div>
+      
+      <div class="fun-fact">
+        <span class="emoji">✨</span>
+        <div>推荐新手使用 system 主题，它会自动适配你的终端配色！</div>
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="themes">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="15-mcp.html">← 上一章：MCP扩展</a>
+      <a href="17-slash-commands.html">下一章：斜杠命令大全 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

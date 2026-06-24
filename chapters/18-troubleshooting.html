@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>故障排除 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>18. 故障排除</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">🛠️</span>
+        <div>遇到问题别慌！这份故障排除指南帮你解决90%的常见问题！</div>
+      </div>
+      
+      <h2>18.1 安装问题</h2>
+      
+      <div class="key-point">
+        <h3>问题1：命令找不到</h3>
+      </div>
+      
+      <div class="comparison">
+        <div class="bad">
+          <div class="label">❌ 错误信息</div>
+          <p>'mimo' 不是内部或外部命令</p>
+        </div>
+        <div class="good">
+          <div class="label">✅ 解决方案</div>
+          <p>1. 重启终端</p>
+          <p>2. 检查npm全局路径是否在PATH中</p>
+          <p>3. 重新安装：npm install -g @mimo-ai/cli</p>
+        </div>
+      </div>
+      
+      <h2>18.2 连接问题</h2>
+      
+      <div class="key-point">
+        <h3>问题2：API连接失败</h3>
+      </div>
+      
+      <div class="comparison">
+        <div class="bad">
+          <div class="label">❌ 错误信息</div>
+          <p>Connection refused / Timeout</p>
+        </div>
+        <div class="good">
+          <div class="label">✅ 解决方案</div>
+          <p>1. 检查网络连接</p>
+          <p>2. 检查API密钥是否正确</p>
+          <p>3. 尝试使用MiMo Auto（免费通道）</p>
+        </div>
+      </div>
+      
+      <h2>18.3 权限问题</h2>
+      
+      <div class="key-point">
+        <h3>问题3：权限不足</h3>
+      </div>
+      
+      <div class="comparison">
+        <div class="bad">
+          <div class="label">❌ 错误信息</div>
+          <p>Permission denied / EACCES</p>
+        </div>
+        <div class="good">
+          <div class="label">✅ 解决方案</div>
+          <p>1. 使用sudo（Linux/Mac）</p>
+          <p>2. 修改目录权限</p>
+          <p>3. 使用管理员权限运行</p>
+        </div>
+      </div>
+      
+      <h2>18.4 工具问题</h2>
+      
+      <div class="key-point">
+        <h3>问题4：文件修改不生效</h3>
+      </div>
+      
+      <div class="comparison">
+        <div class="bad">
+          <div class="label">❌ 现象</div>
+          <p>MiMo说改了文件，但看不到变化</p>
+        </div>
+        <div class="good">
+          <div class="label">✅ 解决方案</div>
+          <p>1. 用 /undo 撤销再重试</p>
+          <p>2. 检查文件路径是否正确</p>
+          <p>3. 刷新编辑器</p>
+        </div>
+      </div>
+      
+      <h2>18.5 性能问题</h2>
+      
+      <div class="key-point">
+        <h3>问题5：响应很慢</h3>
+      </div>
+      
+      <div class="comparison">
+        <div class="bad">
+          <div class="label">❌ 现象</div>
+          <p>MiMo回复很慢，等很久</p>
+        </div>
+        <div class="good">
+          <div class="label">✅ 解决方案</div>
+          <p>1. 用 /compact 压缩会话</p>
+          <p>2. 用 /new 开始新会话</p>
+          <p>3. 切换到更快的模型</p>
+        </div>
+      </div>
+      
+      <h2>18.6 会话问题</h2>
+      
+      <div class="key-point">
+        <h3>问题6：找不到之前的会话</h3>
+      </div>
+      
+      <div class="comparison">
+        <div class="bad">
+          <div class="label">❌ 现象</div>
+          <p>关掉终端后找不到之前的对话</p>
+        </div>
+        <div class="good">
+          <div class="label">✅ 解决方案</div>
+          <p>1. 用 /sessions 查看所有会话</p>
+          <p>2. 选择要恢复的会话</p>
+          <p>3. 重要对话记得用 /export 导出</p>
+        </div>
+      </div>
+      
+      <h2>18.7 终极解决方案</h2>
+      
+      <div class="fun-fact">
+        <span class="emoji">🆘</span>
+        <div>如果以上方法都无效，试试这个"万能操作"：</div>
+      </div>
+      
+      <ol class="steps">
+        <li>用 /new 开始全新会话</li>
+        <li>重新描述你的问题</li>
+        <li>如果还是不行，重启终端</li>
+        <li>最后手段：重新安装MiMo Code</li>
+      </ol>
+      
+      <div class="tip">
+        💡 遇到问题时，把错误信息完整地发给MiMo，它能帮你分析原因！
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="troubleshooting">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="17-slash-commands.html">← 上一章：斜杠命令大全</a>
+      <a href="../index.html">返回首页 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
