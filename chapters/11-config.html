@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高级配置 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>11. 高级配置</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">⚙️</span>
+        <div>想让MiMo Code更懂你？配置一下，它就能变成你的专属助手！</div>
+      </div>
+      
+      <h2>11.1 配置文件在哪？</h2>
+      
+      <p>MiMo Code的配置文件藏在这里：</p>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">系统</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">位置</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">Windows</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>%APPDATA%\mimocode\config.json</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">macOS/Linux</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>~/.config/mimocode/config.json</code></td>
+        </tr>
+      </table>
+      
+      <h2>11.2 选择AI模型</h2>
+      
+      <div class="key-point">
+        <h3>模型选择 = 手机套餐</h3>
+        <p>不同套餐有不同能力，选适合你的！</p>
+      </div>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">模型</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">特点</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">需要什么</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>MiMo Auto</strong> ⭐</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">免费、简单、够用</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">什么都不需要</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">OpenAI GPT</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">能力强、贵</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">API密钥</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">Claude</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">擅长长文、贵</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">API密钥</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">本地模型</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">免费、需要显卡</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">Ollama等</td>
+        </tr>
+      </table>
+      
+      <h2>11.3 配置示例</h2>
+      
+      <h3>使用OpenAI</h3>
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>{
+  "provider": "openai",
+  "model": "gpt-4",
+  "apiKey": "sk-xxxxx"
+}</code></pre>
+      </div>
+      
+      <h3>使用本地模型</h3>
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>{
+  "provider": "ollama",
+  "baseUrl": "http://localhost:11434",
+  "model": "llama2"
+}</code></pre>
+      </div>
+      
+      <h2>11.4 项目专属配置</h2>
+      
+      <p>可以在项目根目录创建 <code>.mimocode/config.json</code>：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>{
+  "memory": { "enabled": true },
+  "tasks": { "enabled": true },
+  "skills": { "path": "./skills" }
+}</code></pre>
+      </div>
+      
+      <div class="fun-fact">
+        <span class="emoji">📁</span>
+        <div>这样每个项目可以有不同配置，互不干扰！</div>
+      </div>
+      
+      <h2>11.5 环境变量</h2>
+      
+      <p>也可以通过环境变量配置（适合服务器）：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>export MIMO_API_KEY="your-key"
+export MIMO_MODEL="gpt-4"</code></pre>
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="config">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="10-voice.html">← 上一章：语音输入</a>
+      <a href="12-examples.html">下一章：实战案例 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

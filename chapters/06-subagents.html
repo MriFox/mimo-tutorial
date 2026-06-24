@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>子代理系统 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>6. 子代理系统</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">🤖</span>
+        <div>任务太多一个人忙不过来？MiMo Code可以召唤"分身"帮你同时处理多个任务！</div>
+      </div>
+      
+      <h2>6.1 什么是子代理？</h2>
+      
+      <p>子代理就是MiMo Code的"分身术"，一个不够用？多变几个！</p>
+      
+      <div class="dialog-box">
+        <div class="line">帮我并行探索：1.项目用了什么库 2.有哪些API 3.测试覆盖率</div>
+        <div class="line ai">收到！我来召唤3个分身同时干活...</div>
+        <div class="line ai">分身1号：正在分析项目依赖...</div>
+        <div class="line ai">分身2号：正在扫描API端点...</div>
+        <div class="line ai">分身3号：正在检查测试文件...</div>
+      </div>
+      
+      <div class="key-point">
+        <h3>分身 = 并行处理</h3>
+        <p>多个任务同时进行，效率翻倍！</p>
+      </div>
+      
+      <h2>6.2 两种分身类型</h2>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">类型</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">特长</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">适合做什么</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>explore</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">快速搜索</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">找文件、搜代码、问问题</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>general</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">全能选手</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">复杂任务、代码审查、大量文件</td>
+        </tr>
+      </table>
+      
+      <div class="fun-fact">
+        <span class="emoji">🔍</span>
+        <div>explore像侦探，快速找线索；general像工人，能干重活累活！</div>
+      </div>
+      
+      <h2>6.3 怎么召唤分身？</h2>
+      
+      <p>你不需要手动召唤，MiMo Code会自动判断：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code># 你只需要说需求
+> 帮我并行搜索所有TODO注释
+
+# MiMo Code会自动创建分身去搜索
+# 搜索完成后自动汇总结果给你</code></pre>
+      </div>
+      
+      <h2>6.4 分身的工作流程</h2>
+      
+      <ol class="steps">
+        <li>你提出需求</li>
+        <li>主代理分析任务</li>
+        <li>创建分身（如果需要）</li>
+        <li>分身并行工作</li>
+        <li>收集结果</li>
+        <li>汇总给你</li>
+      </ol>
+      
+      <h2>6.5 实战示例</h2>
+      
+      <h3>示例1：并行探索代码库</h3>
+      <div class="dialog-box">
+        <div class="line">帮我并行探索：这个项目用了哪些第三方库？有哪些API端点？测试覆盖率如何？</div>
+        <div class="line ai">好的，我会创建3个分身同时工作...</div>
+        <div class="line ai">[几分钟后] 汇总结果如下：...</div>
+      </div>
+      
+      <h3>示例2：代码审查</h3>
+      <div class="dialog-box">
+        <div class="line">用分身帮我审查代码，分别检查：安全性、性能、代码风格</div>
+        <div class="line ai">已创建3个审查分身，正在分析中...</div>
+      </div>
+      
+      <h2>6.6 管理分身</h2>
+      
+      <div class="key-point">
+        <h3>分身也需要管理</h3>
+        <p>查看状态、发送消息、取消任务，你都可以控制！</p>
+      </div>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">操作</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">怎么做</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">查看分身状态</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>> 查看子代理状态</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">给分身发消息</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>> 给分身发消息：请专注性能</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">取消分身</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>> 取消子代理</code></td>
+        </tr>
+      </table>
+      
+      <div class="warning">
+        ⚠️ 注意：分身会占用系统资源，别召唤太多，一般3-5个就够了！
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="subagents">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="05-tasks.html">← 上一章：任务管理</a>
+      <a href="07-compose.html">下一章：Compose模式 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

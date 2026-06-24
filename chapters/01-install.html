@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安装与配置 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>1. 安装与配置</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">🎉</span>
+        <div>恭喜你迈出了第一步！安装MiMo Code就像给你的电脑请了一个AI小助手，它会陪你一起写代码。</div>
+      </div>
+      
+      <p>别担心，安装过程超级简单，就像装一个普通软件一样。跟着我一步步来，5分钟就能搞定！</p>
+      
+      <h2>1.1 MiMo Code 是什么？</h2>
+      <p>想象一下，如果你有一个懂编程的朋友，24小时随时待命，你问什么它都能答——这就是MiMo Code！</p>
+      
+      <div class="dialog-box">
+        <div class="line">这个函数怎么写啊？</div>
+        <div class="line ai">没问题，我来帮你写！你看这样...</div>
+        <div class="line">报错了怎么办？</div>
+        <div class="line ai">让我看看...哦，这里少了个分号，改一下就好啦！</div>
+      </div>
+      
+      <h2>1.2 安装方法</h2>
+      
+      <div class="key-point">
+        <h3>选择适合你的安装方式</h3>
+        <p>两种方法选一种就行，别纠结！</p>
+      </div>
+      
+      <h3>方法一：一键安装（推荐新手）</h3>
+      <p>打开终端（Windows用PowerShell），复制粘贴这行命令：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>curl -fsSL https://mimo.xiaomi.com/install | bash</code></pre>
+      </div>
+      
+      <div class="tip">
+        💡 小贴士：不知道怎么打开终端？Windows按 <code>Win + R</code>，输入 <code>powershell</code> 回车就行！
+      </div>
+      
+      <h3>方法二：npm安装（会编程的同学）</h3>
+      <p>如果你已经装了Node.js，用这个：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>npm install -g @mimo-ai/cli</code></pre>
+      </div>
+      
+      <h2>1.3 启动！</h2>
+      <p>安装好了？太棒了！现在输入这个命令启动：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>mimo</code></pre>
+      </div>
+      
+      <div class="fun-fact">
+        <span class="emoji">✨</span>
+        <div>看到欢迎界面了吗？恭喜！你已经成功召唤了你的AI小助手！</div>
+      </div>
+      
+      <h2>1.4 选择AI模型</h2>
+      <p>首次启动会问你用哪个AI模型，就像选手机套餐一样。新手建议：</p>
+      
+      <div class="key-point">
+        <h3>新手必选：MiMo Auto</h3>
+        <p>完全免费！不需要注册！不需要API密钥！直接用就行！</p>
+      </div>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">选项</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">适合谁</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">需要什么</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>MiMo Auto</strong> ⭐</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">所有人（尤其是新手）</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">什么都不需要</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">小米MiMo平台</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">小米用户</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">小米账号</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">自定义</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">有自己API密钥的</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">API密钥</td>
+        </tr>
+      </table>
+      
+      <h2>1.5 验证安装</h2>
+      <p>怎么知道装好了？试试这些：</p>
+      
+      <ol class="steps">
+        <li>在终端输入 <code>mimo</code> 并回车</li>
+        <li>看到欢迎界面了吗？有就对了！</li>
+        <li>试着输入"你好"，看看它会不会回复你</li>
+      </ol>
+      
+      <div class="fun-fact">
+        <span class="emoji">🎊</span>
+        <div>如果它回复你了，说明一切正常！你已经准备好开始编程之旅了！</div>
+      </div>
+      
+      <h2>1.6 常见翻车现场</h2>
+      
+      <div class="comparison">
+        <div class="bad">
+          <div class="label">❌ "mimo不是内部命令"</div>
+          <p>可能原因：npm路径没配置好</p>
+          <p>解决：重启终端试试，或者重新安装</p>
+        </div>
+        <div class="good">
+          <div class="label">✅ 正常启动</div>
+          <p>看到欢迎界面</p>
+          <p>可以输入消息</p>
+        </div>
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="install">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <span></span>
+      <a href="02-quickstart.html">下一章：快速上手 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>技能系统 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>8. 技能系统</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">🎯</span>
+        <div>MiMo Code会的可不只是聊天！它有一堆"技能卡"，每张都是专业级能力！</div>
+      </div>
+      
+      <h2>8.1 什么是技能？</h2>
+      
+      <p>技能就像MiMo Code的"武功秘籍"，每一本都教它一种专业能力：</p>
+      
+      <div class="dialog-box">
+        <div class="line">帮我调试这个bug</div>
+        <div class="line ai">好的，让我激活debug技能...</div>
+        <div class="line ai">[debug技能启动：系统化分析问题→定位原因→给出修复方案]</div>
+      </div>
+      
+      <div class="key-point">
+        <h3>技能 = 专业工作流</h3>
+        <p>不是随便聊聊，而是按专业流程办事！</p>
+      </div>
+      
+      <h2>8.2 内置技能大全</h2>
+      
+      <p>MiMo Code自带了一堆实用技能：</p>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">技能</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">做什么</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">使用场景</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>ask</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">问答互动</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">需要澄清需求时</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>brainstorm</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">头脑风暴</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">设计新功能</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>debug</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">系统化调试</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">排查bug</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>plan</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">制定计划</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">开始开发前</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>review</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">代码审查</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">代码写完后</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>tdd</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">测试驱动开发</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">需要高质量代码</td>
+        </tr>
+      </table>
+      
+      <h2>8.3 怎么用技能？</h2>
+      
+      <div class="key-point">
+        <h3>两种使用方式</h3>
+        <p>Compose模式自动用，或者你手动指定！</p>
+      </div>
+      
+      <h3>方式1：自动激活</h3>
+      <p>在Compose模式下，MiMo Code会根据任务自动选择合适的技能。</p>
+      
+      <h3>方式2：手动指定</h3>
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code># 直接告诉它用什么技能
+> 用debug技能分析这个错误
+> 用brainstorm技能设计一个API
+> 用review技能审查这段代码</code></pre>
+      </div>
+      
+      <h2>8.4 创建自己的技能</h2>
+      
+      <p>内置技能不够用？可以自己创造！</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code># 技能文件结构
+skills/
+└── my-skill/
+    ├── SKILL.md      # 技能说明
+    ├── prompt.md     # 提示词模板
+    └── examples/     # 示例</code></pre>
+      </div>
+      
+      <div class="fun-fact">
+        <span class="emoji">🛠️</span>
+        <div>就像给MiMo Code写了一本新的武功秘籍，学会新招式！</div>
+      </div>
+      
+      <h2>8.5 技能市场</h2>
+      
+      <p>还可以从社区获取别人分享的技能：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code># 安装社区技能
+> 安装技能@community/api-design
+
+# 你也可以分享自己的技能！</code></pre>
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="skills">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="07-compose.html">← 上一章：Compose模式</a>
+      <a href="09-commands.html">下一章：常用命令 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>持久化记忆 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>4. 持久化记忆</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">🧠</span>
+        <div>MiMo Code有超强记忆力！它能记住你的项目、你的偏好，甚至你上次聊到哪了！</div>
+      </div>
+      
+      <h2>4.1 记忆系统的神奇之处</h2>
+      
+      <p>普通AI助手每次对话都像"失忆"了一样，但MiMo Code不一样——它能记住你！</p>
+      
+      <div class="dialog-box">
+        <div class="line">我上次让你帮我写那个登录功能...</div>
+        <div class="line ai">我记得！你当时说要用JWT认证，我已经写了一半了...</div>
+        <div class="line">对对对！继续吧！</div>
+      </div>
+      
+      <div class="key-point">
+        <h3>记忆 = 跨会话的超能力</h3>
+        <p>关掉终端再打开，MiMo Code还记得你之前在做什么！</p>
+      </div>
+      
+      <h2>4.2 记忆的四个仓库</h2>
+      
+      <p>MiMo Code把记忆分成了四个部分，就像一个井井有条的图书馆：</p>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">记忆类型</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">存什么</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">比喻</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>项目记忆</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">项目规则、架构决策</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">项目说明书</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>会话检查点</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">当前工作状态</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">书签</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>临时笔记</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">随手记的想法</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">便利贴</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>任务进度</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">每个任务的进展</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">待办清单</td>
+        </tr>
+      </table>
+      
+      <h2>4.3 记忆是怎么工作的？</h2>
+      
+      <p>当你开始新会话时，MiMo Code会自动：</p>
+      
+      <ol class="steps">
+        <li>加载上次的"书签"（检查点）</li>
+        <li>翻阅"项目说明书"（项目记忆）</li>
+        <li>查看"待办清单"（任务进度）</li>
+        <li>继续你之前的工作</li>
+      </ol>
+      
+      <div class="fun-fact">
+        <span class="emoji">✨</span>
+        <div>整个过程自动完成，你什么都不用管！</div>
+      </div>
+      
+      <h2>4.4 告诉MiMo Code你的规则</h2>
+      
+      <div class="key-point">
+        <h3>教它你的规矩</h3>
+        <p>告诉MiMo Code你的项目规范，它会记住并在以后遵守！</p>
+      </div>
+      
+      <div class="dialog-box">
+        <div class="line">我们项目用TypeScript，所有函数都要写注释</div>
+        <div class="line ai">明白了！我会记住这个规则，以后写代码都会加注释。</div>
+        <div class="line">变量名要用驼峰命名法</div>
+        <div class="line ai">收到！以后变量名都用驼峰命名。</div>
+      </div>
+      
+      <div class="tip">
+        💡 这些规则会被保存到 <code>MEMORY.md</code> 文件中，你可以随时查看和修改。
+      </div>
+      
+      <h2>4.5 跨会话继续工作</h2>
+      
+      <p>这是记忆系统最实用的功能：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code># 今天下午
+> 帮我实现用户登录功能
+# MiMo Code开始工作...写了一半
+
+# 关掉终端，去喝杯咖啡 ☕
+
+# 晚上回来
+> mimo
+> 继续上次的工作
+# MiMo Code：我记得！我们登录功能写到...</code></pre>
+      </div>
+      
+      <div class="fun-fact">
+        <span class="emoji">☕</span>
+        <div>去喝杯咖啡、吃个饭、睡一觉，回来它还记得！</div>
+      </div>
+      
+      <h2>4.6 最佳实践</h2>
+      
+      <div class="comparison">
+        <div class="good">
+          <div class="label">✅ 这样做</div>
+          <p>主动告诉项目规范</p>
+          <p>让系统自动管理检查点</p>
+          <p>定期查看 MEMORY.md</p>
+        </div>
+        <div class="bad">
+          <div class="label">❌ 别这样做</div>
+          <p>每次都重新介绍项目</p>
+          <p>手动修改检查点文件</p>
+          <p>忽视记忆系统的提示</p>
+        </div>
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="memory">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="03-agents.html">← 上一章：三种代理模式</a>
+      <a href="05-tasks.html">下一章：任务管理 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

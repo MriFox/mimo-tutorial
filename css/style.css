@@ -1,0 +1,501 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary: #64748b;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --bg: #f8fafc;
+  --bg-card: #ffffff;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.progress-bar {
+  height: 4px;
+  background: var(--border);
+  position: fixed;
+  top: 65px;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+main {
+  padding: 40px 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: var(--shadow);
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.card p {
+  color: var(--text-light);
+  margin-bottom: 16px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.chapter-nav a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.chapter-nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.content h1 {
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.content h2 {
+  margin: 32px 0 16px;
+  color: var(--text);
+}
+
+.content h3 {
+  margin: 24px 0 12px;
+  color: var(--text);
+}
+
+.content p {
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.content ul, .content ol {
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.content li {
+  margin-bottom: 8px;
+}
+
+.content code {
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 0.9em;
+}
+
+.content pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 16px;
+  border-radius: var(--radius);
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.content pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+.tip {
+  background: #eff6ff;
+  border-left: 4px solid var(--primary);
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.warning {
+  background: #fef3c7;
+  border-left: 4px solid var(--warning);
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checklist li::before {
+  content: "○";
+  color: var(--text-light);
+}
+
+.checklist li.completed::before {
+  content: "●";
+  color: var(--success);
+}
+
+/* 重点标注 */
+.key-point {
+  background: linear-gradient(120deg: #fef3c7 0%, #fde68a 100%);
+  border: 2px solid #f59e0b;
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.key-point::before {
+  content: "必学";
+  position: absolute;
+  top: -12px;
+  left: 16px;
+  background: #f59e0b;
+  color: white;
+  padding: 2px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.key-point h3 {
+  margin-top: 8px;
+  color: #92400e;
+}
+
+/* 趣味对话框 */
+.dialog-box {
+  background: #f0fdf4;
+  border: 2px dashed #22c55e;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 24px 0;
+  position: relative;
+}
+
+.dialog-box::before {
+  content: "对话";
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: #22c55e;
+  color: white;
+  padding: 2px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.dialog-box .line {
+  margin: 12px 0;
+  padding-left: 60px;
+  position: relative;
+}
+
+.dialog-box .line::before {
+  content: "你:";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: #16a34a;
+  width: 50px;
+}
+
+.dialog-box .line.ai::before {
+  content: "MiMo:";
+  color: #2563eb;
+}
+
+/* 小贴士卡片 */
+.fun-fact {
+  background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.fun-fact .emoji {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* 步骤指示器 */
+.steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+}
+
+.steps li {
+  counter-increment: step;
+  padding: 12px 12px 12px 48px;
+  margin: 12px 0;
+  background: #f8fafc;
+  border-radius: var(--radius);
+  border-left: 3px solid var(--primary);
+  position: relative;
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  background: var(--primary);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* 代码运行效果 */
+.code-demo {
+  background: #0f172a;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.code-demo .header {
+  background: #1e293b;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.code-demo .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.code-demo .dot.red { background: #ef4444; }
+.code-demo .dot.yellow { background: #f59e0b; }
+.code-demo .dot.green { background: #22c55e; }
+
+.code-demo pre {
+  margin: 0;
+  padding: 16px;
+  color: #e2e8f0;
+}
+
+/* 对比卡片 */
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.comparison .bad, .comparison .good {
+  padding: 16px;
+  border-radius: var(--radius);
+}
+
+.comparison .bad {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.comparison .good {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.comparison .label {
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  margin-top: 60px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+}

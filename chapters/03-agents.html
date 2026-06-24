@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三种代理模式 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>3. 三种代理模式</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">🎭</span>
+        <div>MiMo Code有三个"分身"，每个都有不同的超能力！学会切换它们，你就能应对各种场景！</div>
+      </div>
+      
+      <h2>3.1 认识三个小伙伴</h2>
+      
+      <p>想象一下，你有三个不同性格的助手：</p>
+      
+      <div class="dialog-box">
+        <div class="line ai">Build说："交给我！我来帮你写代码、改bug！"</div>
+        <div class="line ai">Plan说："先别急，让我帮你分析分析..."</div>
+        <div class="line ai">Compose说："我来帮你安排整个开发流程！"</div>
+      </div>
+      
+      <h2>3.2 Build - 全能选手</h2>
+      
+      <div class="key-point">
+        <h3>Build：你的主力助手</h3>
+        <p>能读能写能跑命令，开发工作全靠它！</p>
+      </div>
+      
+      <p>Build是默认模式，它能做任何事：</p>
+      <ul>
+        <li>读写代码文件</li>
+        <li>运行程序和命令</li>
+        <li>管理Git版本控制</li>
+        <li>创建子代理帮忙</li>
+      </ul>
+      
+      <div class="fun-fact">
+        <span class="emoji">🔧</span>
+        <div>就像一个全能的工具人，什么活都能干！</div>
+      </div>
+      
+      <h3>什么时候用Build？</h3>
+      <div class="dialog-box">
+        <div class="line">帮我写一个函数</div>
+        <div class="line">这个bug怎么修？</div>
+        <div class="line">运行一下测试</div>
+      </div>
+      
+      <h2>3.3 Plan - 分析师</h2>
+      
+      <div class="key-point">
+        <h3>Plan：你的智囊团</h3>
+        <p>只看不动手，帮你分析问题、设计方案！</p>
+      </div>
+      
+      <p>Plan是个"只读"模式，它只能看不能改：</p>
+      <ul>
+        <li>只能读取文件</li>
+        <li>不能修改任何内容</li>
+        <li>专注于分析和建议</li>
+      </ul>
+      
+      <div class="fun-fact">
+        <span class="emoji">🧠</span>
+        <div>就像军师一样，先想清楚再动手！</div>
+      </div>
+      
+      <h3>什么时候用Plan？</h3>
+      <div class="dialog-box">
+        <div class="line">这个项目用了什么技术？</div>
+        <div class="line">帮我分析一下这段代码</div>
+        <div class="line">这个功能应该怎么设计？</div>
+      </div>
+      
+      <h2>3.4 Compose - 总导演</h2>
+      
+      <div class="key-point">
+        <h3>Compose：你的项目经理</h3>
+        <p>安排整个开发流程，从规划到测试一条龙！</p>
+      </div>
+      
+      <p>Compose是"编排"模式，它能安排复杂的工作流：</p>
+      <ul>
+        <li>规格驱动开发</li>
+        <li>技能驱动工作流</li>
+        <li>全生命周期管理</li>
+      </ul>
+      
+      <div class="fun-fact">
+        <span class="emoji">🎬</span>
+        <div>就像电影导演，统筹安排所有环节！</div>
+      </div>
+      
+      <h3>什么时候用Compose？</h3>
+      <div class="dialog-box">
+        <div class="line">帮我开发一个完整功能</div>
+        <div class="line">按照规范写代码</div>
+        <div class="line">需要代码审查和测试</div>
+      </div>
+      
+      <h2>3.5 如何切换？</h2>
+      
+      <div class="key-point">
+        <h3>一个键搞定！</h3>
+        <p>按 <code>Tab</code> 键就能在三个模式之间切换！</p>
+      </div>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>当前模式: Build
+按 Tab →
+当前模式: Plan
+按 Tab →
+当前模式: Compose
+按 Tab →
+当前模式: Build（循环了）</code></pre>
+      </div>
+      
+      <h2>3.6 实战演练</h2>
+      
+      <div class="key-point">
+        <h3>动手试试看！</h3>
+        <p>跟着下面的步骤操作，体验三种模式的区别</p>
+      </div>
+      
+      <h3>演练1：Plan模式分析代码</h3>
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code># 按 Tab 切换到 Plan 模式
+# 然后输入：
+> 分析这个项目的目录结构，告诉我它使用了什么技术栈
+> 这段代码有什么潜在问题？
+> 设计一个用户登录系统的架构</code></pre>
+      </div>
+      
+      <h3>演练2：Build模式写代码</h3>
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code># 按 Tab 切换到 Build 模式
+# 然后输入：
+> 帮我写一个Python函数，计算斐波那契数列
+> 在这个文件中添加错误处理
+> 运行一下测试看看有没有问题</code></pre>
+      </div>
+      
+      <h3>演练3：Compose模式开发功能</h3>
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code># 按 Tab 切换到 Compose 模式
+# 然后输入：
+> 帮我开发一个简单的计算器功能
+> 需求：支持加减乘除，有输入验证，包含单元测试</code></pre>
+      </div>
+      
+      <h2>3.7 选择建议</h2>
+      
+      <div class="comparison">
+        <div class="good">
+          <div class="label">✅ 新手推荐</div>
+          <p>先用Plan模式了解项目</p>
+          <p>再用Build模式动手修改</p>
+          <p>复杂项目用Compose</p>
+        </div>
+        <div class="bad">
+          <div class="label">❌ 避免这样做</div>
+          <p>上来就用Build乱改</p>
+          <p>用Plan模式修改文件</p>
+          <p>简单任务用Compose（杀鸡用牛刀）</p>
+        </div>
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="agents">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="02-quickstart.html">← 上一章：快速上手</a>
+      <a href="04-memory.html">下一章：持久化记忆 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

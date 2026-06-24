@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>语音输入 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>10. 语音输入</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">🎤</span>
+        <div>打字太累？MiMo Code支持语音输入，动动嘴就能写代码！</div>
+      </div>
+      
+      <h2>2.1 什么是语音输入？</h2>
+      
+      <p>想象一下：你对着电脑说话，MiMo Code就能听懂并执行！</p>
+      
+      <div class="dialog-box">
+        <div class="line">[语音] 帮我写一个Python函数，计算两个数的和</div>
+        <div class="line ai">好的！这是计算两数之和的函数...</div>
+      </div>
+      
+      <div class="key-point">
+        <h3>语音 = 解放双手</h3>
+        <p>开车、吃饭、躺床上都能写代码！</p>
+      </div>
+      
+      <h2>10.2 启用语音输入</h2>
+      
+      <p>只需要一个命令：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>/voice</code></pre>
+      </div>
+      
+      <p>看到语音输入模式启动了吗？现在开始说话吧！</p>
+      
+      <h2>10.3 怎么用？</h2>
+      
+      <ol class="steps">
+        <li>输入 <code>/voice</code> 启动语音模式</li>
+        <li>对着麦克风说话</li>
+        <li>说话停顿后自动发送</li>
+        <li>MiMo Code会转录并响应</li>
+      </ol>
+      
+      <div class="fun-fact">
+        <span class="emoji">✨</span>
+        <div>说话要清晰，停顿要明显，这样识别更准确！</div>
+      </div>
+      
+      <h2>10.4 系统要求</h2>
+      
+      <p>语音输入需要一些额外配置：</p>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">系统</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">需要安装</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">macOS</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>brew install sox</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">Linux</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>sudo apt install sox</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">Windows</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">需要额外配置音频驱动</td>
+        </tr>
+      </table>
+      
+      <div class="warning">
+        ⚠️ 语音输入需要MiMo登录用户才能使用（MiMo Auto免费用户也可以）
+      </div>
+      
+      <h2>10.5 使用技巧</h2>
+      
+      <div class="key-point">
+        <h3>这些技巧让语音识别更准</h3>
+        <p>掌握这些，识别率提升50%！</p>
+      </div>
+      
+      <ul>
+        <li><strong>清晰发音</strong> - 说标准普通话，别太快</li>
+        <li><strong>适当停顿</strong> - 句子之间停一下</li>
+        <li><strong>简洁表达</strong> - 语音适合短指令，复杂内容用键盘</li>
+        <li><strong>安静环境</strong> - 背景噪音会影响识别</li>
+      </ul>
+      
+      <h2>10.6 实战示例</h2>
+      
+      <div class="dialog-box">
+        <div class="line">[语音] 创建一个HTML页面，包含标题和段落</div>
+        <div class="line ai">好的，这是HTML页面代码...</div>
+        <div class="line">[语音] JavaScript中如何处理异步操作</div>
+        <div class="line ai">JavaScript处理异步有几种方式...</div>
+        <div class="line">[语音] 解释这段Python代码的作用</div>
+        <div class="line ai">这段代码的作用是...</div>
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="voice">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="09-commands.html">← 上一章：常用命令</a>
+      <a href="11-config.html">下一章：高级配置 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

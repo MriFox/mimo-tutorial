@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compose模式 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>7. Compose模式</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">🎬</span>
+        <div>Compose模式就像电影导演，帮你安排整个开发流程——从剧本到杀青，一条龙服务！</div>
+      </div>
+      
+      <h2>7.1 什么是Compose模式？</h2>
+      
+      <p>普通写代码像自己做饭：买菜、洗菜、炒菜、装盘全靠自己。</p>
+      <p>Compose模式像请了个私人厨师：你只要说想吃什么，剩下的他全包了！</p>
+      
+      <div class="key-point">
+        <h3>Compose = 自动化开发流水线</h3>
+        <p>规格驱动开发，从设计到测试全自动化！</p>
+      </div>
+      
+      <h2>7.2 Compose的超能力</h2>
+      
+      <p>Compose内置了一堆"技能卡"，每张都有特殊能力：</p>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">技能</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">做什么</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">比喻</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>plan</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">制定计划</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">写剧本</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>execute</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">按计划执行</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">拍戏</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>review</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">代码审查</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">看片会</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>tdd</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">测试驱动开发</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">试映会</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>debug</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">调试</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">改剧本</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>verify</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">验证</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">终审</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>merge</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">合并</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">上映</td>
+        </tr>
+      </table>
+      
+      <h2>7.3 完整工作流</h2>
+      
+      <p>一个完整功能的开发流程：</p>
+      
+      <ol class="steps">
+        <li>你描述需求（"我要做个博客系统"）</li>
+        <li>plan技能制定详细计划</li>
+        <li>execute技能按计划写代码</li>
+        <li>tdd技能编写测试</li>
+        <li>review技能审查代码</li>
+        <li>verify技能验证功能</li>
+        <li>merge技能合并上线</li>
+      </ol>
+      
+      <div class="fun-fact">
+        <span class="emoji">🎥</span>
+        <div>就像拍电影：编剧→拍摄→剪辑→试映→上映，每个环节都有专人负责！</div>
+      </div>
+      
+      <h2>7.4 怎么使用Compose？</h2>
+      
+      <div class="key-point">
+        <h3>切换到Compose模式</h3>
+        <p>按 <code>Tab</code> 切换到Compose，然后描述你的需求！</p>
+      </div>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code># 按 Tab 切换到 Compose 模式
+# 然后输入：
+> 我需要实现一个博客系统，功能包括：
+> - 文章发布和编辑
+> - 评论系统
+> - 标签分类
+> - 搜索功能</code></pre>
+      </div>
+      
+      <p>然后MiMo Code会自动：</p>
+      
+      <div class="dialog-box">
+        <div class="line">我需要实现一个博客系统...</div>
+        <div class="line ai">好的！让我先用plan技能制定开发计划...</div>
+        <div class="line ai">[生成详细的实现计划]</div>
+        <div class="line ai">计划已制定完成，现在开始按计划执行...</div>
+      </div>
+      
+      <h2>7.5 什么时候用Compose？</h2>
+      
+      <div class="comparison">
+        <div class="good">
+          <div class="label">✅ 适合用Compose</div>
+          <p>开发完整的功能模块</p>
+          <p>需要遵循特定开发流程</p>
+          <p>需要代码审查和测试</p>
+          <p>多人协作的大型项目</p>
+        </div>
+        <div class="bad">
+          <div class="label">❌ 不适合用Compose</div>
+          <p>改一行代码的小事</p>
+          <p>问一个简单问题</p>
+          <p>快速探索代码</p>
+        </div>
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="compose">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="06-subagents.html">← 上一章：子代理系统</a>
+      <a href="08-skills.html">下一章：技能系统 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

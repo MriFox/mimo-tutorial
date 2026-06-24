@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>任务管理 - MiMo Code 教程</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">MiMo Code 教程</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../index.html#chapters">教程目录</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+      <h1>5. 任务管理</h1>
+      
+      <div class="fun-fact">
+        <span class="emoji">📋</span>
+        <div>大项目不知从何下手？MiMo Code的任务系统帮你把大任务拆成小块，一块一块搞定！</div>
+      </div>
+      
+      <h2>5.1 为什么需要任务管理？</h2>
+      
+      <p>想象一下你要装修房子：</p>
+      
+      <div class="comparison">
+        <div class="bad">
+          <div class="label">❌ 没有计划</div>
+          <p>"我要装修房子"</p>
+          <p>然后呢？不知道从哪开始...</p>
+          <p>今天买个灯，明天买个马桶...</p>
+        </div>
+        <div class="good">
+          <div class="label">✅ 有计划</div>
+          <p>T1: 装修房子</p>
+          <p>T1.1: 设计方案</p>
+          <p>T1.2: 水电改造</p>
+          <p>T1.3: 买材料...</p>
+        </div>
+      </div>
+      
+      <div class="key-point">
+        <h3>任务系统 = 项目拆解神器</h3>
+        <p>把"不可能完成的任务"变成"一个个小目标"！</p>
+      </div>
+      
+      <h2>5.2 任务长什么样？</h2>
+      
+      <p>任务是一个树形结构，就像家族谱系：</p>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>T1: 实现用户系统
+├── T1.1: 设计数据库
+├── T1.2: 创建API
+├── T1.3: 前端界面
+└── T1.4: 编写测试</code></pre>
+      </div>
+      
+      <h2>5.3 任务的五种状态</h2>
+      
+      <p>每个任务都有自己的"心情"：</p>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">状态</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">意思</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">什么时候用</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>open</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">待处理</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">任务刚创建</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>in_progress</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">进行中</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">正在干活</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>blocked</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">被卡住了</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">等别人或等资源</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>done</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">完成啦！</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">搞定收工</td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><strong>abandoned</strong></td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">放弃了</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;">不做了</td>
+        </tr>
+      </table>
+      
+      <h2>5.4 实战演练</h2>
+      
+      <div class="key-point">
+        <h3>跟着做一遍就会了</h3>
+        <p>创建任务、开始任务、完成任务，就这么简单！</p>
+      </div>
+      
+      <div class="dialog-box">
+        <div class="line">创建一个任务：实现搜索功能</div>
+        <div class="line ai">好的！已创建任务T1：实现搜索功能</div>
+        <div class="line">把这个拆分成子任务：设计API、实现后端、前端界面、写测试</div>
+        <div class="line ai">已创建子任务：T1.1设计API、T1.2实现后端、T1.3前端界面、T1.4写测试</div>
+        <div class="line">开始任务T1.1</div>
+        <div class="line ai">任务T1.1已标记为进行中，开始设计搜索API...</div>
+      </div>
+      
+      <h2>5.5 遇到问题怎么办？</h2>
+      
+      <p>开发中经常会卡住，这时候用"blocked"状态：</p>
+      
+      <div class="dialog-box">
+        <div class="line">阻塞任务T1.2，原因：等待数据库索引支持</div>
+        <div class="line ai">任务T1.2已阻塞，原因已记录。等索引好了告诉我，我帮你恢复。</div>
+        <div class="line">索引搞好了，恢复T1.2</div>
+        <div class="line ai">任务T1.2已恢复，继续实现后端...</div>
+      </div>
+      
+      <div class="fun-fact">
+        <span class="emoji">💡</span>
+        <div>记录阻塞原因很重要！下次回来你就知道为什么卡住了。</div>
+      </div>
+      
+      <h2>5.6 查看整体进度</h2>
+      
+      <div class="code-demo">
+        <div class="header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <pre><code>> 列出所有任务
+
+T1: 实现搜索功能 (进行中)
+├── T1.1: 设计API (完成) ✓
+├── T1.2: 实现后端 (进行中)
+├── T1.3: 前端界面 (待处理)
+└── T1.4: 写测试 (待处理)</code></pre>
+      </div>
+      
+      <h2>5.7 任务操作速查表</h2>
+      
+      <div class="key-point">
+        <h3>常用任务操作，建议收藏！</h3>
+        <p>以后用到直接查，不用翻教程</p>
+      </div>
+      
+      <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <tr style="background:#f1f5f9;">
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">操作</th>
+          <th style="padding:12px; border:1px solid #e2e8f0; text-align:left;">命令</th>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">创建任务</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>> 创建任务：实现登录功能</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">创建子任务</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>> 把T1拆分成：T1.1数据库、T1.2接口、T1.3前端</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">开始任务</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>> 开始任务T1.1</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">完成任务</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>> 完成任务T1.1</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">阻塞任务</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>> 阻塞任务T1.2，原因：等待API文档</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">恢复任务</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>> 恢复任务T1.2</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">查看任务</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>> 查看任务T1的详情</code></td>
+        </tr>
+        <tr>
+          <td style="padding:12px; border:1px solid #e2e8f0;">列出所有任务</td>
+          <td style="padding:12px; border:1px solid #e2e8f0;"><code>> 列出所有任务</code></td>
+        </tr>
+      </table>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mark-completed" data-chapter="tasks">
+        <label for="mark-completed">我已完成本章学习</label>
+      </div>
+    </div>
+
+    <div class="chapter-nav">
+      <a href="04-memory.html">← 上一章：持久化记忆</a>
+      <a href="06-subagents.html">下一章：子代理系统 →</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>MiMo Code 教程 | 帮助新手掌握AI编程助手</p>
+    </div>
+  </footer>
+
+  <script src="../js/progress.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
